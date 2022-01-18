@@ -16,6 +16,6 @@ jobs:
         with:
           inlineScript: |
             $ctx = New-AzStorageContext -StorageAccountName "srhdseuwstdsa"
-            Get-AzStorageBlobContent -Blob "SHTEST5/Temp/Reports-01.csv" -Container "dropzone" -Destination $HOME -Context $ctx.Context
+            Get-AzStorageBlobContent -Blob "SHTEST13/Bronze/Reports-01.csv" -Container "dropzone" -Destination $HOME -Context $ctx.Context
             ls $HOME
           azPSVersion: 3.1.0
